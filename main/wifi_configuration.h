@@ -15,8 +15,9 @@ static struct {
     const char *ssid;
     const char *password;
 } wifi_list[] __attribute__((unused)) = {
-    {.ssid = "OTA", .password = "12345678"},
-    {.ssid = "DAP", .password = "12345678"},
+    {.ssid = "WiFi", .password = "938250Rjyi"},
+    // {.ssid = "OTA", .password = "12345678"},
+    // {.ssid = "DAP", .password = "12345678"},
     // Add your WAP like this:
     // {.ssid = "your ssid", .password = "your password"},
 };
@@ -31,16 +32,16 @@ static struct {
 
 #define USE_STATIC_IP 1
 // If you don't want to specify the ip configuration, then ignore the following items.
-#define DAP_IP_ADDRESS 192, 168, 137, 123
-#define DAP_IP_GATEWAY 192, 168, 137, 1
+#define DAP_IP_ADDRESS 192, 168, 31, 65
+#define DAP_IP_GATEWAY 192, 168, 31, 1
 #define DAP_IP_NETMASK 255, 255, 255, 0
 //
 
 #define USE_OTA              0
 
-#define USE_UART_BRIDGE      0
+#define USE_UART_BRIDGE      1
 #define UART_BRIDGE_PORT     1234
-#define UART_BRIDGE_BAUDRATE 74880
+#define UART_BRIDGE_BAUDRATE 115200
 //
 
 // DO NOT CHANGE
